@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=66.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "app"
+description = "Traffic test"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Alexander Kuzmin", email = "funks.1@yandex.ru" }]
+dependencies = [
+    "fastapi<=0.111.0",
+    "uvicorn<=0.29.0",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = "venv"
